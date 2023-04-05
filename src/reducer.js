@@ -1,0 +1,20 @@
+// 2- Create Reducer to set state and change it 
+export const reducerCounter = (state = {counter: 0} , action) => { //reducerCounter عبارة عن ميثود
+
+  if(action.type === "INCREMENT") {
+    return { counter:state.counter + 1 }
+  }
+  if(action.type === "DECREMENT") {
+    return { counter:state.counter - 1 }
+  }
+  if(action.type === "RESET") {
+    return { counter: 0 }
+  }
+
+  return state;
+
+}
+
+
+
+
